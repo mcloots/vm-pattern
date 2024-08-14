@@ -1,0 +1,28 @@
+.pseudo-page__header {
+    @apply bg-cyan-900 flex flex-row justify-between px-4 py-4 rounded-b-2xl text-white;
+  }
+  
+  .pseudo-page__container {
+    @apply px-12;
+  }
+  .pseudo-page__todo-list > h2 {
+    @apply text-3xl py-2;
+  }
+  .pseudo-page__todo-list {
+    @apply mx-auto;
+  }
+  .pseudo-page__todo-list > ul {
+    @apply list-disc;
+  }
+  .pseudo-page__todo-list > .pseudo-page__actions button.pseudo-page__button {
+    @apply px-3 py-1 border border-red-800 rounded-xl;
+  }
+  .pseudo-page__todo-list
+    > .pseudo-page__actions
+    button.pseudo-page__button[disabled] {
+    @apply opacity-55 cursor-not-allowed;
+  }
+  .pseudo-page__todo-list > .pseudo-page__actions {
+    @apply flex flex-row justify-between px-4 py-4;
+  }
+  
