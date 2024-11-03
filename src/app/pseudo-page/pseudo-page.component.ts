@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { AsyncPipe } from '@angular/common';
 import {
   BehaviorSubject,
+  debounceTime,
   interval,
   switchMap
 } from 'rxjs';
@@ -23,6 +24,7 @@ export class PseudoPageComponent {
 
   readonly loggedTime$ = interval(1000);
   readonly todoList$ = this.currentPage$.pipe(
+    //debounceTime(300),
     switchMap((page) => this.todoService.getTodos(page, 10))
   );
 

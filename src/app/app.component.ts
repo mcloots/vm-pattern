@@ -4,11 +4,12 @@ import { PseudoPageComponent } from './pseudo-page/pseudo-page.component';
 import { PseudoPageSignalsComponent } from './pseudo-page-signals/pseudo-page-signals.component';
 import { CurrentUserSignalsService } from '../datasources/current-user-signals';
 import { CurrentUserService } from '../datasources/current-user';
+import { PseudoPageVmComponent } from './pseudo-page-vm/pseudo-page-vm.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [PseudoPageComponent, PseudoPageSignalsComponent],
+  imports: [PseudoPageComponent, PseudoPageVmComponent, PseudoPageSignalsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
