@@ -38,7 +38,7 @@ export class PseudoPageSignalsComponent {
     loggedTime: this.formattedLoggedTime(),
     currentPage: this.currentPage(),
     currentUser: this.currentUserService.currentUserName,
-    todoList: this.todoList,
+    todoList: this.todoList(),
   }));
 
   // Methods to navigate between pages

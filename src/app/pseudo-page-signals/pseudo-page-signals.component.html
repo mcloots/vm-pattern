@@ -6,7 +6,7 @@
     <div class="pseudo-page__todo-list">
         <h2>There is your todo-list</h2>
         <ul>
-            @for (element of vm().todoList(); track element.id) {
+            @for (element of vm().todoList; track element.id) {
             <li>{{ element.title }}</li>
             }
         </ul>
